@@ -69,3 +69,48 @@ function isitraining(a)
     }
 }
 console.log(isitraining("no"))
+
+// logical operator
+console.log(true && false)
+console.log(true ||false)
+console.log(!true)
+function sign(a)
+{
+    if(a=="green")
+    {
+        console.log("go")
+    }
+    else if(a=="red")
+    {
+        console.log("stop")
+    }
+    else{
+        console.log("wait")
+    }
+}
+sign("red")
+function oddoreven(a)
+{
+    if(a&1==1)
+    {
+
+
+
+        console.log("odd")
+    }
+    else{
+        console.log("even")
+    }
+}
+oddoreven(10)
+
+//loops
+for(var i=0;i<5;i++)
+{
+
+
+
+
+    
+    console.log("js is awesome")
+}
