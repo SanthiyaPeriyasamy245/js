@@ -1,0 +1,29 @@
+
+<input id="box1">
+<input id="box2">
+<button onclick="sum()">add</button>
+<p id="answer">click add to see your answer</p>
+<p id="ans">result</p>
+    <h1 id="title">Hello!</h1>
+    <!-- event and event handler -->
+    <button id="btn" onclick="change()">change</button>
+    <script>
+
+        var s1=document.getElementById("box1")
+        var s2=document.getElementById("box2")
+        var s3=document.getElementById("answer")
+        function sum()
+        {
+
+            s3.textContent=Number(s1.value)+Number(s2.value)
+        
+        }
+        var h=document.getElementById("title")
+        function change() 
+        {
+            
+            h.textContent="happy new year!"
+        }
+     
+
+    </script>
