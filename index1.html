@@ -1,0 +1,35 @@
+
+
+
+<!-- Guessing Game -->
+<h1>Guess the Number!</h1>
+<input id="box">
+<button onclick="check()">check</button>
+<p id="result">you're wrong/right</p>
+<p id="score"> score</p>
+<script>
+    var checkbox=document.getElementById("box")
+    var answer=document.getElementById("result")
+    var r=Math.floor(Math.random()*10)+1 // random number generation
+    var score=document.getElementById("score")
+    var total=10
+
+
+
+ 
+    function check()
+    {
+        var a=checkbox.value
+        if(a==r)
+        {
+            answer.textContent="you're right"
+            alert("you won!")
+        }
+        else{
+            total=total-1
+            score.textContent=total
+            answer.textContent= "you're wrong"
+          
+        }
+    }
+</script>
