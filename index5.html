@@ -1,0 +1,27 @@
+<h1 id="txt">Choose your specail One!</h1>
+<button  onclick="call(event)">Santhiya</button>
+<button  onclick="call(event)">gowtham</button>
+<button  onclick="call(event)">Sivakumar</button>
+<button  onclick="call(event)">Saraswathy</button>
+<button  onclick="call(event)">Periyasamy</button>
+
+<h1  onclick="del(event)">One</h1>
+<h1 onclick="del(event)">two</h1>
+<h1  onclick="del(event)">three</h1>
+<h1  onclick="del(event)">four</h1>
+<h1  onclick="del(event)">five</h1>
+
+
+<script>
+    function del(event)
+    {
+      var a= event.target
+      a.remove()
+        
+    }
+    function call(event)
+    {
+        var ans=document.getElementById("txt")
+        ans.textContent=event.target.textContent
+    }
+</script>

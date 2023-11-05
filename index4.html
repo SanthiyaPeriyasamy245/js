@@ -1,0 +1,37 @@
+
+<button onclick="cge()" id="changecolor">change the color</button>
+<br>
+<br>
+<input onkeyup="display()" id="txt">
+<p id="txtcpy"></p>
+<button onclick="print()" id="btn">Add Hello </button>
+<h1 id="hello"></h1>
+<div id="container">
+ 
+
+</div>
+<script>
+function cge()
+{
+  var c=document.getElementById("changecolor")
+  c.style.background="red"
+}
+    function print()
+    {
+      var greet=document.getElementById("container")
+      // greet.append("Hello") it'll append in same tag
+      var x=document.createElement("h2") //<h2></h2>
+      x.textContent="Hello" //<h2></h2>
+      greet.append(x) //<div><h2>hello<h2></div
+
+    }
+    function display()
+    {
+
+    var txt=document.getElementById("txt")
+   
+    var para=document.getElementById("txtcpy")
+    para.textContent=txt.value
+    }
+   
+</script>
