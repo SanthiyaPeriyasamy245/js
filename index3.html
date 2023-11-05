@@ -1,0 +1,42 @@
+<style>
+    #btn{
+        margin:10px;
+        height: 80px;
+        width: 100px;
+        background-color:black;
+        transition:3s;
+        
+    }
+    .center{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .color{
+        color:blue;
+    }
+    .width{
+        border-radius:50%;
+    }
+</style>
+
+<div class="center">
+    <p id="para">change the  color of box</p>
+<div id="btn"></div>
+<button onclick="change()">click here</button>
+</div>
+
+<script>
+    function change()
+    {
+    var txt=document.getElementById("para")
+    txt.setAttribute("class","color")
+    var color=document.getElementById("btn")
+    color.style.backgroundColor="green"
+    color.setAttribute("class","width")
+    
+ 
+    }
+    
+</script>
