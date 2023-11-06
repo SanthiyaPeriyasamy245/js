@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+</head>
+<body>
+    <h1> TodoList!</h1>
+     
+    <div id="top">
+        <div class="container">
+
+
+            <input  id="input">
+            <button onclick="add()">Add</button>
+    <ul id="list">
+        <li>
+            Hello
+            <button onclick="del(event)">delete</button>
+        </li>
+       
+    </ul>
+        </div>
+      
+    </div>
+    
+</body>
+</html>
+
+<script>
+    function del(event)
+    {
+        event.target.parentElement.remove()
+
+    }
+    function add()
+    {
+        var a=document.getElementById("input")
+        var list=document.getElementById("list")
+        var li=document.createElement("li")
+        li.innerHTML=a.value+"<button onclick='del(event)'>delete</button>"
+        list.append(li)
+       
+        
+    }
+</script>
