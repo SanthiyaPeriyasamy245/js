@@ -1,0 +1,26 @@
+<div id="div">
+    <h1>Hello</h1>
+    
+</div>
+<h3 class="no">five</h3>
+    <h2 class="ok">1</h2>
+    <h2 class="ok">2</h2>
+    <h2 class="ok">3</h2>
+<script>
+    
+    var a=document.getElementById("div")
+    a.innerHTML="<h1>hi</h1>"
+    a.prepend("gowthem")
+
+    var x=document.querySelector(".no")
+    x.innerHTML="<h1>gain</h1>"
+    var y=document.querySelectorAll(".ok")
+
+    for(var i=0;i<y.length;i++)
+    {
+    y[i].innerHTML="<h1>you're awesome!</h1>"
+    }
+    var x=document.createElement("h2")
+    x.textContent="santhiya"
+    a.insertAdjacentElement("beforebegin",x)
+</script>
