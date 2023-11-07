@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar
+{
+    background-color:orange;
+    padding: 10px;
+}
+.container{
+    padding:10px;
+
+}
+.book-container{
+   padding: 15px;
+   width: 25%;
+   background: #000;
+   border-radius:10px;
+   color:white;
+   display: inline-block;
+   vertical-align: top;
+
+}
+.book-container h2{
+    color:orange;
+}
+.book-container button{
+    background:orange;
+    color:black;
+    border-radius:10px;
+    padding: 5px 10px 5px 10px;
+    margin-top: 10px;
+}
+.plusone{
+    background: orange;
+    color: white;
+    padding:20px 30px 20px 30px;
+    border-radius: 100%;
+    font-size:40px;
+    border:none;
+    position:fixed;
+    bottom:30px;
+    right:30px;
+}
+.outbox{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    left:0px;
+    opacity: 0.8;
+    z-index: 1;
+    display:none;
+  
+}
+.inbox{
+    background:orange;
+    width: 40%;
+    padding:40px;
+    border-radius: 10px;
+    position: absolute;
+    top:20%;
+    left:20%;
+    z-index:2;
+    display: none;
+}
+.inbox input{
+    background: transparent;
+    border:none;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border-bottom: solid black 2px;
+}
+.inbox textarea{
+    background: transparent;
+    
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border: solid black 2px;
+}
+.inbox ::placeholder{
+    color:black;
+}
+.inbox button{
+    background: black;
+    padding-left:20px;
+    padding-right: 20px;
+    border:none;
+    padding-top:10px;
+    padding-bottom:10px;
+    color:white;
+    margin:5px;
+    border-radius:5px;
+
+} 
+.inbox input:focus{
+outline:none;
+}
+.inbox textarea:focus{
+    outline:none;
+    }
+
