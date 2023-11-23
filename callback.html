@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Call back function </h1>
+    <button id="btn">Click here</button>
+    <script>
+ function attachEventListener(){
+    let c=0;
+    document.getElementById("btn").addEventListener("click",function(){
+        document.getElementById("btn")   .style.backgroundColor="blue";
+        document.getElementById("btn").style.color="White";
+            console.log("count" + ++c)
+            
+        })
+ }
+ attachEventListener()
+
+  // here the inner function forms a closure with it's outer function.so it has an access to  the c variable.
+ // here addeventlistener has a call back function while clicking the btn the function get called.
+
+    </script>
+
+</body>
+</html>
